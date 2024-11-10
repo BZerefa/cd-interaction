@@ -1,0 +1,38 @@
+html {
+	background: #fff;
+	color: #777;
+	font: 14px arial, helvectica, sans-serif;
+    overflow-y: scroll;
+}
+
+body {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#header-top {
+    margin: 25px 0 50px;
+}
+
+	#header-top h1 {
+		border-bottom: 1px dashed #ccc;
+		color: darkolivegreen;
+		font-size: 3rem;
+		margin: 0;
+		padding-bottom: 25px;
+		text-align: center;
+	}
+
+/* Zoo Code */
+
+
+
+
+#footer-bottom {
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: right;
+    color: #CCC;
+}

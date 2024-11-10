@@ -1,0 +1,21 @@
+html {
+    background-color: darkolivegreen;
+    color: darkslateblue;
+}
+body {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow;
+}
+header {
+    border: 6px double darkgoldenrod;
+    padding: 1em;
+}
+
+header img {
+    width: 10%;
+    max-width: 213px;
+    height: auto;
+}

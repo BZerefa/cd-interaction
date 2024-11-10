@@ -1,0 +1,86 @@
+html {
+  background-color: white;
+  color: black;
+  overflow-y: scroll;
+}
+body {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 99; /* want it to be higher than everything usually */
+}
+#site-header nav {
+  background-color: rgb(219, 161, 17);
+  padding: 1em;
+  position: absolute; /* absolute elements only expand in width & height according to content */
+  top: 22%;
+  left: 0;
+  right: 0;
+  z-index: 1; /* items that may be stacked at a higher value in html won't be higher than this */
+}
+#site-header nav menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+#site-header nav li {
+  display: inline;
+  margin-left: 1.25em;
+}
+#site-header nav a {
+  color: navy;
+  text-decoration: none;
+}
+#site-header figure {
+  margin: 0;
+  position: relative;
+  left: 1.5em;
+  z-index: 2; /* higher than the nav system, which it is a sibling of */
+}
+
+main {
+  background-color: ghostwhite; /* rgb(106, 122, 181) */
+  padding: 1px 1.5em;
+  border: 6px double navy;
+  margin-top: 1.5em;
+  margin-bottom: 60px;
+}
+.fig-float-left {
+  width: 40%;
+  max-width: 330px;
+  float: left;
+  margin: 0 1em 0.25em 0; /* going clockwise starting from the top */
+  border: 2px solid navy;
+  position: relative;
+}
+.fig-float-left img {
+  width: 100;
+  height: auto;
+  vertical-align: bottom;
+}
+.fig-float-left figcaption {
+  background-color: navy; /* rgb(237, 28, 36) */
+  color: white;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#site-footer {
+  background-color: navy;
+  color: white;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: inherit; /*  */
+  max-width: inherit;
+  box-sizing: border-box;
+}

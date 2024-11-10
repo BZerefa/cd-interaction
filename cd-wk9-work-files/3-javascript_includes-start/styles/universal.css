@@ -1,0 +1,32 @@
+html {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#top-header {
+    border-bottom: solid 2px #000;
+    padding-bottom: .5em;
+}
+#top-header h1 {
+    color:darkmagenta; 
+    font-size: 3rem; 
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    margin: 200px 0;
+}
+
+#btm-footer {
+    text-align: center;
+    border-top: solid 1px #900;
+    padding-top: 6px;
+}
+#btm-footer address {
+    font-weight: bold;
+    font-style: normal;
+    color:darkmagenta;
+    font-size: 1.5rem;
+}

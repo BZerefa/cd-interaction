@@ -1,0 +1,189 @@
+html {
+    background-color: darkolivegreen;
+    color: darkslateblue;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow;
+}
+    /* To extend scrolling on the FAQ page */
+    .body-faq {
+        margin-bottom: 100vh;
+    }
+#top-header {
+    border: 6px double darkgoldenrod;
+    padding: 1em;
+    display: flow-root;
+}
+
+    #top-header img {
+        width: 10%;
+        max-width: 213px;
+        height: auto;
+        float: left;
+    }
+
+#main-nav {
+    color: lightgray;
+    background-color: darkolivegreen;
+    padding: 1em;
+    position: sticky;
+    top: -1px;
+}
+    #main-nav menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    #main-nav menu li {
+        display: inline-block;
+        margin-right: 1em;
+        background-color: darkgoldenrod;
+        /* width: 200px; */
+        padding: .5em;
+    }
+    #main-nav menu a {
+        color: lightgoldenrodyellow;
+        text-decoration: none;
+    }
+
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 80px;
+    padding-bottom: 1em;
+}
+
+    main h1,  main h2,  main h3 {
+        color: darkgoldenrod;
+    }
+    main h1 {
+        border-bottom: 2px solid darkolivegreen;
+    }
+
+    /* Target Jumpto links on the FAQ page */
+    #faq li {
+        margin-top: .75em;
+    }
+    #faq li::marker {
+        content: '🦆 ';
+    }
+
+    /* Target FAQ DL list */
+    #faq-ans dt {
+        margin-top: .75em;
+    }
+    #faq-ans dt:first-child {
+        color:brown;
+    }
+
+    #faq-ans dd {
+        margin-top: .4em;
+        margin-left: 1.5em;
+    }
+    #faq-ans dd:first-of-type {
+        color: orange;
+    }
+    #faq-ans dd:first-of-type::first-letter {
+        color: darkolivegreen;
+    }  
+    
+    /* Go to top link on FAQ */
+    #top-btn {
+        position: fixed;
+        right: 15px;
+        top: 48%;
+        z-index: 9;
+    }
+    #top-btn a {
+        display: block;
+        background-color: brown;
+        padding: .5em;
+        color: lightgoldenrodyellow;
+        text-decoration: none;
+    }
+
+    /* Targets city ULs on the Chapters Page */
+
+    .assoc-cities > li {
+        margin-bottom: .5em;
+        margin-top: .5em;
+        list-style-image: url('../images/acorn.png');
+    }
+    .assoc-cities > li li  {
+        list-style-image: none;
+        list-style-type: disc;
+        margin-top: .5em;
+    }
+
+    /* Float CSS */
+    /* Float Figures on Cats & Dogs */
+    .float-fig-left {
+        /* outline: 2px solid red; */
+        margin: 0 1em 0 0;
+        width: 150px;
+        float: left;
+
+    }
+    .float-fig-left img {
+        width: 150px;
+        height: auto;
+    }
+    .clear-float::after {
+        content: '';
+        /* outline: 2px solid green; */
+        display: block;
+        clear: left;
+        height: 1.5em;
+    }
+    .clear-float h2 {
+        margin-top: 0;
+    }
+    .clear-float p {
+        margin-bottom: 0;
+    }
+
+    /* Targets Aside on Winter Nesting */
+    .pullquote {
+        border: 5px solid darkgreen;
+        /* padding: 0 1em; */
+        float: right;
+        width: 30%;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+    .pullquote h3 {
+        background-color: darkgreen;
+        color: lightgoldenrodyellow;
+        padding: 1em;
+        margin-top: 0;
+    }
+    .pullquote p {
+        color: darkgoldenrod;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+
+#btm-footer {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 1em;
+    /* margin-top: 1em; */
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    max-width: inherit;
+    box-sizing: border-box;
+}
+    #btm-footer address::before {
+        content: '🐻‍❄️ ';
+    }
+    #btm-footer address::after {
+        content: ' 🐻‍❄️';
+    }

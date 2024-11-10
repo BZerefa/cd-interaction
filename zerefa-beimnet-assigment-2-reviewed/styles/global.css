@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url(amaranth/amaranth-font.css); /* Since there are no amaranth fonts within the styles or site folder this import has failed. Also, it is code from our in-class exercises. While it is fine to study and review coding from class exercises, that coding should not be used verbatim in your CSS. */
+
+html {
+  background-color: black;
+  scroll-behavior: smooth; 
+
+  scroll-padding-top: 85px; /* Since none of the documents have Jumpto links, this style is unnecessary and should be removed. */
+
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+}
+body {
+  width: 80%;
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+#top-header {
+  border: 6px double darkgoldenrod;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "amaranthbold_italic"; /* A font that has not been imported cannot be assigned. Additionally, when assigning fonts there should be a list that ends with the font type. Otherwise you run the risk that if your end users do not have access to your single desired font, a browser will display its own default font, which for many browsers is Times New Roman. */
+
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+}
+
+#main-nav {
+  background-color: black;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1; /* To ensure that the sticky navigation system remains stacked above all non-statically positioned elements, assign it the z-index property set to a large number, such as 99. */
+}
+
+#main-nav menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#main-nav menu li {
+
+  margin-right: 1em; /* This margin competes with the value assigned to the justify-content property in the '#main-nav menu' style rule. Choose one method to set the space around the flex items. In a flexbox, using the justify-content property is often the preferred and more flexible method. */
+
+  background-color: grey;
+  width: 12%;
+  padding: 1em;
+  text-align: center;
+}
+
+#main-nav menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+main {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 60px;
+}
+
+main h1,
+main h2,
+main h3 {
+  color: darkred;
+}
+main h1 {
+  font-size: 2rem;
+}
+
+main h2 {
+  text-decoration: none; /* Unnecessary since this is the default styling for the <h2> element. Additionally, there is no inherited styling that needs to be overridden. */
+}
+
+main h3 {
+  font-style: italic;
+}
+
+main p {
+  line-height: 1.4em;
+}
+
+/* Image styling */
+.profile {
+  margin: 0 2em;
+  display: block;
+  float: right;
+  width: 50%;
+  max-width: 300px;
+  height: auto; 
+  border: 6px double darkolivegreen;
+  padding: 0.25em;
+}
+
+.portfolio-images {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.portfolio-image-landscape {
+  margin: 2em auto;
+  display: block;
+  width: 530px;
+  height: auto;
+
+  border: none; /* Unnecessary since this is the default styling for the targeted <img> elements. */
+  
+  padding: 0.25em; /* Since this style rule has no border styling, there is no need to assign it padding. If negative space between the targeted <img> elements is needed, replace the "auto" value in the above margin property with the value assigned to the padding. */
+}
+
+/* Since the 'portfolio-image-landscape' and 'portfolio-image-portrait' class style rules have a lot of styling in common, it would be more efficient to merge their common styling into a group style rule. The group style rule would then be followed by individual style rules for each class that has CSS that is specific for their targeted <img> elements.  */
+.portfolio-image-portrait {
+  margin: 2em auto;
+  display: block;
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  
+  /* See the border and padding notes in the above 'portfolio-image-landscape' class style rule. */
+  border: none;
+  padding: 0.25em;
+}
+
+#btm-footer {
+  background-color: rgb(45, 41, 41);
+  padding: 1em;
+  margin-top: 1em;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: inherit; 
+  max-width: inherit;
+  box-sizing: border-box;
+}
+
+#btm-footer address {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}

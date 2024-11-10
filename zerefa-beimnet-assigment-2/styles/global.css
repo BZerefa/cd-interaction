@@ -1,0 +1,156 @@
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+body {
+  width: 80%;
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+#top-header {
+  border: 6px double darkgoldenrod;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: 0.04em;
+}
+
+#main-nav {
+  background-color: black;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+#main-nav menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#main-nav menu li {
+  background-color: grey;
+  width: 12%;
+  padding: 1em;
+  text-align: center;
+}
+
+#main-nav menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+#main-nav menu a:hover {
+  background-color: rgb(255, 255, 255);
+  color: goldenrod;
+  outline: solid rgb(255, 255, 255) 1em;
+}
+
+main {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 60px;
+}
+
+main h1,
+main h2,
+main h3 {
+  color: darkred;
+}
+main h1 {
+  font-size: 2rem;
+}
+
+main h3 {
+  font-style: italic;
+}
+
+main p {
+  line-height: 1.4em;
+}
+
+.profile {
+  margin: 0 2em;
+  display: block;
+  float: right;
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  outline: 6px double darkolivegreen;
+  padding: 0.25em;
+}
+
+.profile:hover {
+  outline: double darkred 7px;
+}
+
+.portfolio-images {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.portfolio-image {
+  margin: 2em 0.5em;
+  display: block;
+  height: auto;
+}
+
+.portfolio-image-landscape {
+  width: 600px;
+}
+
+.portfolio-image-portrait {
+  width: 50%;
+  max-width: 300px;
+}
+
+.summary {
+  border: 3px solid darkred;
+  padding: 0 1em;
+  width: 90%;
+  margin-left: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.summary-active {
+  background-color: darkgoldenrod;
+  color: white;
+  cursor: pointer;
+}
+
+#btm-footer {
+  background-color: rgb(45, 41, 41);
+  padding: 1em;
+  margin-top: 1em;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  max-width: inherit;
+  box-sizing: border-box;
+}
+
+#btm-footer address {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}

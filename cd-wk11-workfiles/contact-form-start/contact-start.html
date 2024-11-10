@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us | Sports Center</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/global.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <h1>Sporting Center</h1>
+      <nav>
+        <menu>
+          <li><a href="#">Fitness</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Footwear</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Camping</a></li>
+          <li><a href="#">Biking</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact</h2>
+
+      <p>Please fill out the fields below.</p>
+
+      <p class="star">Required Fields</p>
+
+      <form action="success.html" method="post" id="products">
+        <input
+          type="hidden"
+          name="recipient_email"
+          value="marketing@sportingcenter.com"
+        />
+        <input type="hidden" name="subject" value="Product Interest" />
+
+        <label class="star" for="fullname">Full Name</label>
+        <input
+          type="text"
+          name="full_name"
+          id="fullname"
+          required
+          class="fullfield"
+        />
+
+        <label class="star" for="email">Email Address</label>
+        <input
+          type="email"
+          name="email_address"
+          id="email"
+          required
+          class="fullfield"
+        />
+
+        <label for="street">Street Address</label>
+        <input
+          type="text"
+          name="street_address"
+          id="street"
+          class="fullfield"
+        />
+
+        <label for="city">City/Town</label>
+        <input type="text" name="city_town" id="city" />
+
+        <select name="state">
+          <option selected>State</option>
+          <option value="CT">CT</option>
+          <option value="NJ">NJ</option>
+          <option value="NY">NY</option>
+          <option value="PA">PA</option>
+        </select>
+
+        <label for="zipcode">Zip Code</label>
+        <input type="text" name="zip_code" id="zipcode" maxlength="10" />
+
+        <label class="star"
+          >I am interested in (click all that apply):
+          <span id="flag">Please choose at least one item</span></label
+        >
+        <input
+          type="checkbox"
+          name="merchandise"
+          value="Equipment"
+        />Equipment<br />
+        <input
+          type="checkbox"
+          name="merchandise"
+          value="Uniforms"
+        />Uniforms<br />
+        <input type="checkbox" name="merchandise" value="Shoes" />Shoes<br />
+        <input type="checkbox" name="merchandise" value="Socks" />Socks
+
+        <label>Send Newsletter</label>
+        <input type="radio" name="newsletter" value="yes" checked />Yes<br />
+        <input type="radio" name="newsletter" value="no" />No
+
+        <label for="comments">Questions / Requests</label>
+        <textarea
+          name="questions_requests"
+          id="comments"
+          maxlength="200"
+        ></textarea>
+
+        <input type="reset" value="Reset" />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer id="site-footer">
+      <nav>
+        <menu>
+          <li class="activePg">contact</li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+        </menu>
+      </nav>
+    </footer>
+
+    <script>
+      const form = document.getElementById("products");
+      console.log(form);
+
+      const flag = document.getElementById("flag");
+      console.log(flag);
+
+      const merch = document.getElementsByName("merchandise");
+      console.log(merch);
+
+      function validateForm() {
+        for (let node of merch) {
+          if (node.checked) {
+            flag.style.visibility = "hidden";
+            return true;
+            break;
+          }
+        }
+
+        flag.style.visibility = "visible";
+        event.preventDefault();
+      }
+
+      form.addEventListener("submit", validateForm);
+
+      function merchChecked() {
+        for (let node of merch) {
+          if (node.checked) {
+            flag.style.visibility = "hidden";
+            break;
+          } else {
+            flag.style.visibility = "visible";
+          }
+        }
+      }
+
+      for (let item of merch) {
+        item.addEventListener("change", merchChecked);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+html {
+    background-color: white;
+    color: black;
+    font: 16px arial, helvetica, sans-serif
+}
+body {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#container {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 50px;
+    cursor: pointer;
+}
+#cat {
+    width: 234px;
+    height: 216px;
+}
+#dog {
+    width: 172px;
+    height: 216px;
+}

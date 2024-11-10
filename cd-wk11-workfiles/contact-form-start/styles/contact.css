@@ -1,0 +1,64 @@
+/* HTML Elements */
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+select {
+  margin-left: 0.5em;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 8em; /* THIS DID NOT SEEM TO WORK SO CHECK */
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+/* Style the Reset and Submit buttons */
+input[type="reset"],
+input[type="submit"] {
+  background-color: lightskyblue;
+  padding: 0.75em;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.457);
+  font-weight: 700;
+}
+
+/* IDs */
+
+/* Container Form ID Name*/
+#products {
+  background-color: darkblue;
+  border: 1px solid lightskyblue;
+  padding: 1em;
+}
+
+/* For City input field */
+#city {
+  width: 75%;
+}
+
+/* For span that requires one item selected */
+#flag {
+  color: yellow;
+  font-weight: 900;
+  font-size: 1.25em;
+  visibility: hidden;
+}
+
+/* Classes */
+
+/* For labels attached to required fields */
+.star::before {
+  content: "★ ";
+  color: yellow;
+  font-size: 1.5em;
+}
+
+/* Input fields that are full width */
+.fullfield {
+  width: 100%;
+  box-sizing: border-box;
+}

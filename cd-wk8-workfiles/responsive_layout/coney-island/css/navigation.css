@@ -1,0 +1,73 @@
+#hamburger {
+  flex: 0 1 fit-content; /* Can apply this to block elements as well */
+}
+
+#hamburger label {
+  font-size: 2.25rem;
+}
+
+#hamburger menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 1px); /* height plus thickness of border */
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+#hamburger menu li {
+  border-top: 1px solid darkcyan;
+  border-left: 1px solid darkcyan;
+  border-right: 1px solid darkcyan;
+}
+
+#hamburger menu li:first-child {
+  border-top: none;
+}
+
+#hamburger menu li:last-child {
+  border-top: 1px solid darkcyan;
+}
+
+#hamburger menu a {
+  color: darkcyan;
+  background-color: beige;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Navigational buttons */
+#close-btn {
+  display: none;
+}
+
+#ckbx:checked ~ menu {
+  /* when checkbox is checked, look for this label that's a sibling */
+  display: block;
+}
+
+#ckbx:checked ~ label #open-btn {
+  /* won't see the open button anymore */
+  display: none;
+}
+
+#ckbx:checked ~ label #close-btn {
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  #hamburger menu {
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #hamburger menu {
+    left: 75%;
+  }
+}

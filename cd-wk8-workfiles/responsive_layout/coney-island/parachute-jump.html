@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Targets the viewport, need this on every page in website to accomodate to the width and scale of different devices (responsive design) -->
+
+    <title>
+      Coney Island Parachute Jump | Historical | Gallery | PhotoWorld
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+
+    <!-- <script src="scripts/jquery.js"></script> -->
+
+    <!-- <script src="scripts/fontFlex.js" defer></script> -->
+  </head>
+  <body>
+    <header id="header-top">
+      <h1>PhotoWorld</h1>
+
+      <nav id="hamburger">
+        <input type="checkbox" id="ckbx" hidden />
+
+        <label for="ckbx">
+          <span id="open-btn">✚</span>
+          <span id="close-btn">✖︎</span>
+        </label>
+
+        <menu>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Classics</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Historical</a></li>
+          <li><a href="#">Skylines</a></li>
+          <li><a href="#">Bridges</a></li>
+          <li><a href="#">Bio</a></li>
+          <li><a href="#">Contact</a></li>
+        </menu>
+      </nav>
+    </header>
+
+    <main id="parachute-page">
+      <picture class="parachute-pix">
+        <source
+          srcset="images/parachute-phone.jpg"
+          media="(max-width: 480px)"
+        />
+        <!-- () allows you to write css condition and 480px is most phone width -->
+
+        <source
+          srcset="images/parachute-landscape.jpg"
+          media="(max-width: 767px)"
+        />
+
+        <source
+          srcset="images/parachute-tablet.jpg"
+          media="(max-width: 1024px)"
+        />
+
+        <img
+          src="images/parachute-desktop.jpg"
+          alt="Coney Island Parachute ride"
+        />
+      </picture>
+      <article class="parachute-article">
+        <h2>Parachute Jump History</h2>
+
+        <p>
+          The Parachute Jump is a defunct amusement ride in Coney Island,
+          Brooklyn, New York, whose iconic open-frame steel structure remains a
+          Brooklyn landmark. 250 feet (76 m) tall and weighing 170 tons (150
+          tonnes), it has been called the "Eiffel Tower of Brooklyn".
+        </p>
+
+        <p>
+          It was originally built for the 1939 New York World's Fair in Flushing
+          Meadows–Corona Park, Queens,[4] and moved to its current site, then
+          part of the Steeplechase Park amusement park, in 1941. It is the only
+          portion of Steeplechase Park still standing today. The ride ceased
+          operations in 1964, when the park shut down for good.
+        </p>
+
+        <p>
+          The ride was based on functional parachutes which were held open by
+          metal rings throughout the ascent and descent. Twelve cantilevered
+          steel arms sprout from the top of the tower, each of which supported a
+          parachute attached to a lift rope and a set of surrounding guide
+          cables. Riders were belted into a two-person canvas seat hanging below
+          the closed chute, then hoisted to the top, where a release mechanism
+          would drop them, the descent slowed only by the parachute. Shock
+          absorbers at the bottom, consisting of pole-mounted springs, cushioned
+          the landing. Each parachute required three cable operators, keeping
+          labor expenses high.
+        </p>
+      </article>
+    </main>
+
+    <footer id="footer-btm">
+      <address>
+        PhotoWorld, LTD • 123 8th Avenue • New York, NY&nbsp;10036
+      </address>
+    </footer>
+  </body>
+</html>

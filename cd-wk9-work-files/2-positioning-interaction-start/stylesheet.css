@@ -1,0 +1,56 @@
+html {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: arial, helvetica, sans-serif;
+}
+body {
+  width: 70%;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+#site-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: aliceblue;
+  background-color: darkslateblue;
+  padding: 1em;
+}
+main {
+  border: 6px double darkslateblue;
+  padding: 1em 2em;
+}
+
+.tutorial {
+  text-decoration: underline;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.tutorial:hover .more-info {
+  visibility: visible;
+}
+
+.more-info {
+  color: bisque;
+  text-decoration: none;
+  background-color: darkcyan;
+  padding: 0.2em;
+  border-radius: 10px; /* Applies to an element even when it's not an image */
+  position: absolute;
+  bottom: 100%;
+  left: 13%;
+}
+
+#site-footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: slategray;
+  padding: 1em;
+}

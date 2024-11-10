@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+html {
+	overflow-y: scroll;
+    font: 14px/18px 'Lato', sans-serif;
+    color: #FFF;
+    background-color: #000;
+}
+
+body {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+	#site-header nav menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	#site-header nav li {
+		flex-grow: 1;
+		background-color: #434;
+		padding: .5em 0;
+		text-align: center;
+	}
+	#site-header nav a {
+		color: #EED;
+		text-decoration: none;
+	}
+
+main {
+	margin: 20px 0;
+	border: 1px solid #434;
+	padding: 20px;
+}
+main h2 {
+    font-size: 1.75em;
+    margin-top: 0;
+}
+
+#site-footer {
+	margin: 20px 0;
+	color: #AAA;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+	#site-footer menu {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	#site-footer li {
+		display: inline;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#site-footer a {
+		text-decoration: none;
+		color: #FFF;
+	}
+	#site-footer a:hover {
+		color: #CC9;
+	}
+	#site-footer .activePg::before {
+		content: "{ "
+	}	
+	#site-footer .activePg::after {
+		content: " }"
+	}

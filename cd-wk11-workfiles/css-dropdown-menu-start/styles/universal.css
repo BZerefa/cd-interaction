@@ -1,0 +1,95 @@
+html {
+    color: #000;
+    background-color: #FFF;
+    font: 14px/17px arial, helvetica, sans-serif;
+}
+
+body {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+#site-header {
+    padding: 20px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/******** begin overall drop down menu styling ********/
+#prime-nav {
+    font-weight: bold;
+    font-size: 1.25rem;
+    outline: 1px solid green;
+}
+	    
+/* set style for the Menu and UL elements */
+
+
+/* set the styling only for the Menu element  */
+
+
+/* set style for top level list items */
+
+
+/* set styling for menubtn and links on all levels */
+
+
+/* set styling for just the links on all levels */
+
+
+/* set default cursor for just menubtn. */
+
+
+/* controls the foreground and background colors on the hover state of menubtn and a link no matter its level in the navigation system */
+
+
+/* drop down menu styling */
+
+
+/* reveal drop down menu */
+
+
+/********end drop down menu navigation system***********/
+
+main {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 20px;
+}
+
+    .golf-lessons h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .golf-lessons h2 {
+        font-size: 1.2rem;
+    }
+
+    .golfing-fig {
+        margin: 0 0 .25em 1em;
+        float: right;
+        width: 50%;
+        max-width: 919px;
+        border: 6px double rgb(88, 146, 198);
+    }
+        .golfing-fig img {
+            width: 100%;
+            height: auto;
+        }
+
+    .golf-keys li {
+        margin-bottom: .5em;
+    }
+
+#site-footer {
+    font-size: .9rem;
+    text-align: center;
+    color: #EEE;
+    background-color: #900;
+    padding: 20px;
+}
